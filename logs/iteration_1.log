@@ -1,0 +1,18 @@
+2025-05-03 21:24:29,102 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-03 21:24:29,102 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:24:29,103 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-03 21:24:29,103 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-03 21:28:27,887 - Iteration_1 - ERROR - An unexpected error occurred: not enough values to unpack (expected 3, got 1)
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 75, in <module>
+    generatedInputs, returnVals, path = engine.explore(options.max_iters)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 1)
+2025-05-03 21:28:38,115 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-03 21:28:38,115 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:28:38,115 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-03 21:28:38,115 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-03 21:29:16,419 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-03 21:29:16,420 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:29:16,420 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-03 21:29:16,420 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
