@@ -98,7 +98,7 @@ Ensure the following are in place before beginning the installation:
    - **4.3. Install Required Python Package**
 
      ```bash
-     pip install z3
+     pip install z3-solver
      deactivate
      ```
 
