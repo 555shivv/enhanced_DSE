@@ -82,3 +82,27 @@ AttributeError: 'list' object has no attribute 'getNames'
 2025-05-04 11:06:06,965 - Iteration_1 - ERROR - AssertionError occurred: False
 2025-05-04 11:06:43,419 - Iteration_1 - ERROR - AssertionError occurred: False
 2025-05-04 11:09:57,299 - Iteration_1 - ERROR - AssertionError occurred: False
+2025-05-04 13:17:51,061 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 13:17:51,061 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 13:17:51,061 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 13:17:51,061 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 14:10:17,262 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 14:10:17,262 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 14:10:17,262 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 14:10:17,262 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 14:10:25,939 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 14:10:25,940 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 14:10:25,940 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 14:10:25,940 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 14:10:28,038 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 14:10:28,038 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 14:10:28,038 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 14:10:28,038 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 14:10:29,873 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 14:10:29,873 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 14:10:29,873 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 14:10:29,874 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 14:34:27,797 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 14:34:27,798 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 14:34:27,798 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 14:34:27,801 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]

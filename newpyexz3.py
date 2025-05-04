@@ -82,6 +82,7 @@ try:
                 dot_filename = os.path.join(log_folder, f"{os.path.basename(filename)}_{iteration + 1}.dot")
                 with open(dot_filename, "w") as file:
                     file.write(path.toDot())
+                print(f"dot graph is saved in {dot_filename}")
 
             # Log results of the exploration
             if result is not None and result is not True:

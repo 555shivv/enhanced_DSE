@@ -1,0 +1,12 @@
+digraph {
+C0 [ label="root" ];
+C0 -> C1;
+C0 -> C2;
+C1 [ label="Not((> a#2, b#3))" ];
+C1 -> C3;
+C1 -> C4;
+C3 [ label="Not((== a#2, b#3))" ];
+C4 [ label="(== a#2, b#3)" ];
+C2 [ label="(> a#2, b#3)" ];
+
+}
