@@ -1,2 +1,6 @@
-logs
-.gitignore
+logs/
+__pycache__/
+*.pyc
+*.pyo
+*.dot
+*.png
