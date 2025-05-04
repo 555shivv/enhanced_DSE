@@ -16,3 +16,69 @@ ValueError: not enough values to unpack (expected 3, got 1)
 2025-05-03 21:29:16,420 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
 2025-05-03 21:29:16,420 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
 2025-05-03 21:29:16,420 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-03 21:36:51,832 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-03 21:36:51,833 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:36:51,833 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-03 21:36:51,833 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-03 21:44:52,962 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-03 21:44:52,962 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:44:52,962 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-03 21:44:52,962 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 10:40:40,679 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 10:40:40,680 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:40:40,680 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 10:40:40,680 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 10:41:27,203 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 10:41:27,205 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:41:27,205 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 10:41:27,205 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 10:51:04,937 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 10:51:04,939 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:51:04,940 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 10:51:04,940 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 10:52:19,060 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 10:52:19,063 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:52:19,065 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 10:52:19,065 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 10:55:08,152 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 10:55:08,159 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:55:08,160 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 10:55:08,160 - Iteration_1 - INFO - Test Case 3: [('a', 2), ('b', 9)]
+2025-05-04 10:55:53,119 - Iteration_1 - ERROR - An unexpected error occurred: not enough values to unpack (expected 3, got 1)
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 75, in <module>
+    generatedInputs, returnVals, path = engine.explore(options.max_iters)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 1)
+2025-05-04 10:56:01,706 - Iteration_1 - INFO - Generated Test Cases:
+2025-05-04 10:56:01,707 - Iteration_1 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:56:01,707 - Iteration_1 - INFO - Test Case 2: [('a', 2), ('b', 8)]
+2025-05-04 10:58:03,110 - Iteration_1 - ERROR - An unexpected error occurred: 'list' object has no attribute 'getNames'
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 74, in <module>
+    engine = ExplorationEngine(invocation, solver=solver)
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\pyexz3clone\symbolic\explore.py", line 26, in __init__
+    for n in funcinv.getNames():
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'getNames'
+2025-05-04 10:58:15,371 - Iteration_1 - ERROR - AssertionError occurred: 
+2025-05-04 10:58:30,479 - Iteration_1 - ERROR - AssertionError occurred: 
+2025-05-04 11:05:17,717 - Iteration_1 - ERROR - An unexpected error occurred: 'list' object has no attribute 'getNames'
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 74, in <module>
+    engine = ExplorationEngine(invocation, solver=solver)
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\pyexz3clone\symbolic\explore.py", line 26, in __init__
+    for n in funcinv.getNames():
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'getNames'
+2025-05-04 11:05:48,623 - Iteration_1 - ERROR - An unexpected error occurred: 'list' object has no attribute 'getNames'
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 74, in <module>
+    engine = ExplorationEngine(invocation, solver=solver)
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\pyexz3clone\symbolic\explore.py", line 26, in __init__
+    for n in funcinv.getNames():
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'getNames'
+2025-05-04 11:06:06,965 - Iteration_1 - ERROR - AssertionError occurred: False
+2025-05-04 11:06:43,419 - Iteration_1 - ERROR - AssertionError occurred: False
+2025-05-04 11:09:57,299 - Iteration_1 - ERROR - AssertionError occurred: False

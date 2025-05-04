@@ -1,0 +1,14 @@
+2025-05-03 21:44:53,002 - Iteration_5 - INFO - Generated Test Cases:
+2025-05-03 21:44:53,002 - Iteration_5 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:44:53,003 - Iteration_5 - INFO - Test Case 2: [('a', 12), ('b', 12)]
+2025-05-04 10:40:41,431 - Iteration_5 - INFO - Generated Test Cases:
+2025-05-04 10:40:41,432 - Iteration_5 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:40:41,432 - Iteration_5 - INFO - Test Case 2: [('a', 12), ('b', 12)]
+2025-05-04 10:41:27,452 - Iteration_5 - INFO - Generated Test Cases:
+2025-05-04 10:41:27,452 - Iteration_5 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:41:27,453 - Iteration_5 - INFO - Test Case 2: [('a', 12), ('b', 12)]
+2025-05-04 10:51:06,981 - Iteration_5 - INFO - Generated Test Cases:
+2025-05-04 10:51:06,983 - Iteration_5 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:51:06,983 - Iteration_5 - INFO - Test Case 2: [('a', 12), ('b', 12)]
+2025-05-04 11:06:43,942 - Iteration_5 - ERROR - AssertionError occurred: False
+2025-05-04 11:09:57,875 - Iteration_5 - ERROR - AssertionError occurred: False

@@ -7,3 +7,56 @@
 2025-05-03 21:29:16,440 - Iteration_2 - INFO - Generated Test Cases:
 2025-05-03 21:29:16,440 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
 2025-05-03 21:29:16,440 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-03 21:36:51,841 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-03 21:36:51,841 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:36:51,841 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-03 21:44:52,972 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-03 21:44:52,973 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-03 21:44:52,973 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-04 10:40:40,830 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-04 10:40:40,831 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:40:40,831 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-04 10:41:27,257 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-04 10:41:27,258 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:41:27,258 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-04 10:51:05,205 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-04 10:51:05,207 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:51:05,207 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-04 10:52:19,179 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-04 10:52:19,180 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:52:19,180 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-04 10:55:08,178 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-04 10:55:08,179 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:55:08,179 - Iteration_2 - INFO - Test Case 2: [('a', 10), ('b', 10)]
+2025-05-04 10:56:01,714 - Iteration_2 - INFO - Generated Test Cases:
+2025-05-04 10:56:01,714 - Iteration_2 - INFO - Test Case 1: [('a', 2), ('b', 3)]
+2025-05-04 10:56:01,714 - Iteration_2 - INFO - Test Case 2: [('a', 4), ('b', 4)]
+2025-05-04 10:58:03,119 - Iteration_2 - ERROR - An unexpected error occurred: 'list' object has no attribute 'getNames'
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 74, in <module>
+    engine = ExplorationEngine(invocation, solver=solver)
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\pyexz3clone\symbolic\explore.py", line 26, in __init__
+    for n in funcinv.getNames():
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'getNames'
+2025-05-04 10:58:15,378 - Iteration_2 - ERROR - AssertionError occurred: 
+2025-05-04 10:58:30,492 - Iteration_2 - ERROR - AssertionError occurred: 
+2025-05-04 11:05:17,725 - Iteration_2 - ERROR - An unexpected error occurred: 'list' object has no attribute 'getNames'
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 74, in <module>
+    engine = ExplorationEngine(invocation, solver=solver)
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\pyexz3clone\symbolic\explore.py", line 26, in __init__
+    for n in funcinv.getNames():
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'getNames'
+2025-05-04 11:05:48,633 - Iteration_2 - ERROR - An unexpected error occurred: 'list' object has no attribute 'getNames'
+Traceback (most recent call last):
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\newpyexz3.py", line 74, in <module>
+    engine = ExplorationEngine(invocation, solver=solver)
+  File "C:\Users\s devi sree suchitra\Downloads\tool-main (4)\tool-main\pyexz3clone\symbolic\explore.py", line 26, in __init__
+    for n in funcinv.getNames():
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'getNames'
+2025-05-04 11:06:06,998 - Iteration_2 - ERROR - AssertionError occurred: False
+2025-05-04 11:06:43,536 - Iteration_2 - ERROR - AssertionError occurred: False
+2025-05-04 11:09:57,473 - Iteration_2 - ERROR - AssertionError occurred: False

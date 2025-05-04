@@ -8,7 +8,16 @@ from .invocation import FunctionInvocation
 from .symbolic_types import symbolic_type, SymbolicType
 import random
 
+# 🔧 Rich import
+from rich.console import Console
+from rich.table import Table
+from rich.panel import Panel
+from rich import box
+
+console = Console()
 log = logging.getLogger("se.conc")
+
+# ... [imports and class init stay the same]
 
 class ExplorationEngine:
     def __init__(self, funcinv, solver="z3"):
@@ -37,60 +46,41 @@ class ExplorationEngine:
     def addConstraint(self, constraint):
         if constraint not in self.constraints_to_solve:
             self.constraints_to_solve.append(constraint)
-            constraint.inputs=self._getInputs()
-        
+            constraint.inputs = self._getInputs()
 
     def explore(self, max_iterations=0):
+        print(" Starting symbolic exploration...\n")
         self._oneExecution()
 
         iterations = 1
         if max_iterations != 0 and iterations >= max_iterations:
-            log.debug("Maximum number of iterations reached, terminating")
             return self.execution_return_values
 
         while not self._isExplorationComplete():
             selected = self.constraints_to_solve.popleft()
-
             if selected.processed:
                 continue
-            selected.processed = True  # ✅ Mark it processed here
+            selected.processed = True
 
             self._setInputs(selected.inputs)
-
-            log.info("Selected constraint %s" % selected)
             asserts, query = selected.getAssertsAndQuery()
-
-            print("[*] Solving constraints:")
-            for a in asserts:
-                print("  -", a)
-            print("  Query:", query)
 
             model = self.solver.findCounterexample(asserts, query)
             if model is None or all(self._getConcrValue(self.symbolic_inputs[k]) == model[k] for k in model):
-                 log.debug("Model did not produce new inputs. Skipping.")
-                 continue
-
-            if model is None:
-                print("[-] No model found.")
                 continue
-            else:
-                print("[+] Found model:")
-                for name in model.keys():
-                    print(f"    {name} = {model[name]}")
-                    self._updateSymbolicParameter(name, model[name])
+
+            for name in model.keys():
+                self._updateSymbolicParameter(name, model[name])
 
             self._oneExecution(selected)
             iterations += 1
             self.num_processed_constraints += 1
 
             if max_iterations != 0 and iterations >= max_iterations:
-                log.info("Maximum number of iterations reached, terminating")
                 break
 
-        total, covered = self.path.getConditionCoverage()
-        coverage = (covered / total * 100) if total > 0 else 100.0
-        print(f"Condition Coverage using DSE: {covered}/{total} ({coverage:.2f}%)")
-
+        # Print Summary
+        self._printSummary()
         return self.generated_inputs, self.execution_return_values, self.path
 
     def _updateSymbolicParameter(self, name, val):
@@ -103,34 +93,34 @@ class ExplorationEngine:
         self.symbolic_inputs = d
 
     def _isExplorationComplete(self):
-        num_constr = len(self.constraints_to_solve)
-        if num_constr == 0:
-            log.info("Exploration complete")
-            return True
-        else:
-            log.info("%d constraints yet to solve (total: %d, already solved: %d)" % (
-                num_constr, self.num_processed_constraints + num_constr, self.num_processed_constraints))
-            return False
+        return len(self.constraints_to_solve) == 0
 
     def _getConcrValue(self, v):
-        if isinstance(v, SymbolicType):
-            return v.getConcrValue()
-        else:
-            return v
+        return v.getConcrValue() if isinstance(v, SymbolicType) else v
 
     def _recordInputs(self):
-        args = self.symbolic_inputs
-        print("  [*] Input types:")
-        for k, v in args.items():
-            print(f"    {k}: {v} ({type(v)})")
-
-        inputs = [(k, self._getConcrValue(args[k])) for k in args]
+        inputs = [(k, self._getConcrValue(v)) for k, v in self.symbolic_inputs.items()]
         self.generated_inputs.append(inputs)
-        print(inputs)
-    
+
     def _oneExecution(self, expected_path=None):
         self._recordInputs()
         self.path.reset(expected_path)
         ret = self.invocation.callFunction(self.symbolic_inputs)
-        print(ret)
         self.execution_return_values.append(ret)
+
+    def _printSummary(self):
+        print("\n" + "="*70)
+        print(" Summary of Symbolic Exploration")
+        print("="*70)
+        for idx, (inputs, ret) in enumerate(zip(self.generated_inputs, self.execution_return_values), 1):
+            print(f"\n🔹 Test Case {idx}")
+            print("   Inputs:")
+            for name, val in inputs:
+                print(f"    {name} = {val}")
+            print(f"   Return: {ret}")
+        
+        total, covered = self.path.getConditionCoverage()
+        coverage = (covered / total * 100) if total > 0 else 100.0
+        print("\n╭─  Condition Coverage using DSE ─╮")
+        print(f"│ {covered} / {total} => {coverage:.2f}% coverage         │")
+        print("╰───────────────────────────────────╯")
